@@ -9,9 +9,7 @@ namespace AMK.Exp.Autofac
         {
             var containerBuilder = new ContainerBuilder();
 
-            containerBuilder.RegisterType<ConsoleNotification>().As<INotificationService>();
-            containerBuilder.RegisterType<UserService>().AsSelf();
-            //containerBuilder.RegisterModule<ProgramModule>();
+            containerBuilder.RegisterModule<ProgramModule>();
 
             var container = containerBuilder.Build();
 
