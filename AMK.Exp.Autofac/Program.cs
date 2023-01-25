@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Autofac;
+using System;
 
 namespace AMK.Exp.Autofac
 {
@@ -6,7 +7,21 @@ namespace AMK.Exp.Autofac
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var containerBuilder = new ContainerBuilder();
+
+            containerBuilder.RegisterModule<ProgramModule>();
+
+            var container = containerBuilder.Build();
+
+
+            var notificationService = container.Resolve<INotificationService>();
+            var userService = container.Resolve<UserService>();
+
+            var user1 = new User("Manik");
+
+            userService.ChangeUsername(user1, "Mani");
+
+            Console.ReadKey();
         }
     }
 }
