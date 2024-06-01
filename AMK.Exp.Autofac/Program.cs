@@ -1,5 +1,6 @@
 ﻿using Autofac;
 using System;
+using System.Collections.ObjectModel;
 
 namespace AMK.Exp.Autofac
 {
@@ -7,21 +8,28 @@ namespace AMK.Exp.Autofac
     {
         static void Main(string[] args)
         {
-            var containerBuilder = new ContainerBuilder();
+            ReadOnlyCollection<TimeZoneInfo> tz;
+            tz = TimeZoneInfo.GetSystemTimeZones();
+            
+            foreach(var t in tz)
+            {
+                Console.WriteLine(t.StandardName);
+            }
+            //var containerBuilder = new ContainerBuilder();
 
-            containerBuilder.RegisterModule<ProgramModule>();
+            //containerBuilder.RegisterModule<ProgramModule>();
 
-            var container = containerBuilder.Build();
+            //var container = containerBuilder.Build();
 
 
-            var notificationService = container.Resolve<INotificationService>();
-            var userService = container.Resolve<UserService>();
+            //var notificationService = container.Resolve<INotificationService>();
+            //var userService = container.Resolve<UserService>();
 
-            var user1 = new User("Manik");
+            //var user1 = new User("Manik");
 
-            userService.ChangeUsername(user1, "Mani");
+            //userService.ChangeUsername(user1, "Mani");
 
-            Console.ReadKey();
+            //Console.ReadKey();
         }
     }
 }
