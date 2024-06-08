@@ -17,7 +17,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VirtualOverrideAndNewPolymo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Autofac.Example", "Autofac.Example\Autofac.Example.csproj", "{886405AE-F81F-4D2C-8CA8-DA3F5956D8ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentAssertionsShouldly", "FluentAssertionsShouldly\FluentAssertionsShouldly.csproj", "{4370718A-CE0C-4B6F-B50C-03728703C320}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FluentAssertionsShouldly", "FluentAssertionsShouldly\FluentAssertionsShouldly.csproj", "{4370718A-CE0C-4B6F-B50C-03728703C320}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplicationExperiments", "WebApplicationExperiments\WebApplicationExperiments.csproj", "{45FC72F4-2C00-4DCE-88FC-0F9DD0589219}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "InterviewQuestions", "InterviewQuestions", "{BAF106F7-E01D-4D23-8F62-ABC42DC42E26}"
+	ProjectSection(SolutionItems) = preProject
+		InterviewQuestions.md = InterviewQuestions.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +64,10 @@ Global
 		{4370718A-CE0C-4B6F-B50C-03728703C320}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4370718A-CE0C-4B6F-B50C-03728703C320}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4370718A-CE0C-4B6F-B50C-03728703C320}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45FC72F4-2C00-4DCE-88FC-0F9DD0589219}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45FC72F4-2C00-4DCE-88FC-0F9DD0589219}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45FC72F4-2C00-4DCE-88FC-0F9DD0589219}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45FC72F4-2C00-4DCE-88FC-0F9DD0589219}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
