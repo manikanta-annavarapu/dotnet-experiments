@@ -26,17 +26,17 @@ namespace VirtualOverrideAndNewPolymorphism
         public void Run()
         {
             A a = new A();
-            a.Test();
+            a.Test(); // A::Test()
             B b = new B();
-            b.Test();
+            b.Test(); // B::Test()
             C c = new C();
-            c.Test();
+            c.Test(); // C::Test()
 
             a = new B();
-            a.Test();
+            a.Test(); // A::Test()
 
             b = new C();
-            b.Test(); // 
+            b.Test(); // B::Test()
 
         }
     }
