@@ -1,9 +1,11 @@
 using Microsoft.AspNetCore.Mvc;
+using WebApplicationExperiments.Filters.AttributeFilters;
 
 namespace WebApplicationExperiments.Controllers
 {
     [ApiController]
     [Route("[controller]")]
+    [TypeFilter(typeof(SampleActionFilterAsyncAttribute))]
     public class WeatherForecastController : ControllerBase
     {
         private static readonly string[] Summaries = new[]

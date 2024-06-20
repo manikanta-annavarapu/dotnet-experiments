@@ -1,6 +1,12 @@
 using Microsoft.Extensions.Primitives;
+using WebApplicationExperiments.Filters;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddControllersWithViews(options =>
+{
+    options.Filters.Add<GlobalSampleActionFilter>();
+});
 
 // Add services to the container.
 
