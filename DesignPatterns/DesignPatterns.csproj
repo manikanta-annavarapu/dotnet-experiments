@@ -8,8 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="ObjectRelations\Association\" />
+    <Folder Include="ObjectRelations\Dependency\" />
+    <Folder Include="ObjectRelations\Composition\" />
     <Folder Include="Patterns\" />
-    <Folder Include="ObjectRelations\" />
   </ItemGroup>
 
 </Project>
