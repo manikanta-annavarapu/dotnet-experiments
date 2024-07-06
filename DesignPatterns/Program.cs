@@ -1,2 +1,8 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+using DesignPatterns.ObjectRelations.Aggregation;
+
+// Object Relations
+
+// Aggregation
+AggregationExample1 aggregationExample1 = new AggregationExample1();
+aggregationExample1.Run();

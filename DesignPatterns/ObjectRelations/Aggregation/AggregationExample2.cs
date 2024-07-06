@@ -4,10 +4,10 @@ internal class AggregationExample2
 {
     public void Run()
     {
-        var book1 = new Book("The Alchemist", "Paulo Coelho");
-        var book2 = new Book("The Da Vinci Code", "Dan Brown");
-        var book3 = new Book("The Great Gatsby", "F. Scott Fitzgerald");
-        var library = new Library("Public Library");
+        var book1 = new Book("The Alchemist", "Paulo Coelho"); // Component object
+        var book2 = new Book("The Da Vinci Code", "Dan Brown"); // Component object
+        var book3 = new Book("The Great Gatsby", "F. Scott Fitzgerald"); // Component object
+        var library = new Library("Public Library"); // Container object
         library.AddBook(book1);
         library.AddBook(book2);
         library.AddBook(book3);

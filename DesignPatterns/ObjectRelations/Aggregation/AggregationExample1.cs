@@ -4,11 +4,11 @@ internal class AggregationExample1
 {
     public void Run()
     {
-        var car = new Car("Toyota", "Corolla");
-        car.AddWheel(new Wheel("Front Left"));
-        car.AddWheel(new Wheel("Front Right"));
-        car.AddWheel(new Wheel("Rear Left"));
-        car.AddWheel(new Wheel("Rear Right"));
+        var car = new Car("Toyota", "Corolla"); // Container object
+        car.AddWheel(new Wheel("Front Left")); // Wheel is Component object
+        car.AddWheel(new Wheel("Front Right")); // Wheel is Component object
+        car.AddWheel(new Wheel("Rear Left")); // Wheel is Component object
+        car.AddWheel(new Wheel("Rear Right")); // Wheel is Component object
 
         car.DisplayCarInfo(); 
         // Make: Toyota, Model: Corolla
