@@ -1,9 +1,10 @@
 ﻿namespace DesignPatterns.ObjectRelations.Aggregation;
 
-internal class AggregationExample1
+internal class AggregationExample1 : Separator
 {
     public void Run()
     {
+        Console.WriteLine("This is Aggregation Example");
         var car = new Car("Toyota", "Corolla"); // Container object
         car.AddWheel(new Wheel("Front Left")); // Wheel is Component object
         car.AddWheel(new Wheel("Front Right")); // Wheel is Component object
@@ -16,6 +17,7 @@ internal class AggregationExample1
         // Wheel: Front Right
         // Wheel: Rear Left
         // Wheel: Rear Right
+        base.Run();
     }
 }
 

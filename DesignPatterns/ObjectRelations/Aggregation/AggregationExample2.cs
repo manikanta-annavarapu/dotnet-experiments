@@ -1,6 +1,6 @@
 ﻿namespace DesignPatterns.ObjectRelations.Aggregation;
 
-internal class AggregationExample2
+internal class AggregationExample2 : Separator
 {
     public void Run()
     {
@@ -13,6 +13,7 @@ internal class AggregationExample2
         library.AddBook(book3);
 
         library.DisplayLibraryInfo();
+        base.Run();
     }
 }
 

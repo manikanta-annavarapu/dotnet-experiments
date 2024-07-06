@@ -6,3 +6,7 @@ using DesignPatterns.ObjectRelations.Aggregation;
 // Aggregation
 AggregationExample1 aggregationExample1 = new AggregationExample1();
 aggregationExample1.Run();
+
+// Association
+AssociationExample1 associationExample1 = new AssociationExample1();
+associationExample1.Run();
