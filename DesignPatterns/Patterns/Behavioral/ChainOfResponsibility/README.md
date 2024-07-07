@@ -12,39 +12,7 @@ The request travels along the chain until all handlers have had a chance to proc
 The request is passed to the first handler of chain, each handler decides whether to handle it or pass to next handler. **Once it is handled it will no longer sends the request to next handler.**
 
 ## UML Diagram
-
-```mermaid
-classDiagram
-
-Handler <|.. BaseHandler : Realization
-BaseHandler o--> Handler : Aggregation
-BaseHandler <|-- ConcreteHandler1 : Inheritance
-BaseHandler <|-- ConcreteHandler2 : Inheritance
-
-class Handler{
-    <<interface>>
-    +setNext(h: Handler)
-    +handle(request)
-}
-
-class BaseHandler{
-    -next: Handler
-    +setNext(h: Handler)
-    +handle(request)
-}
-
-class ConcreteHandler1{
-    ...
-    +handle(request)
-}
-
-class ConcreteHandler2{
-    ...
-    +handle(request)
-}
-```
-
-[Image Source](./ChainOfResponsility.mermaid)
+![Image Source](./ChainOfResponsility.mermaid)
 
 ### References
 
