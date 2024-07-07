@@ -10,7 +10,9 @@
   <ItemGroup>
     <Folder Include="ObjectRelations\Dependency\" />
     <Folder Include="ObjectRelations\Composition\" />
-    <Folder Include="Patterns\" />
+    <Folder Include="Patterns\Behavioral\ChainOfResponsibility\" />
+    <Folder Include="Patterns\Creational\" />
+    <Folder Include="Patterns\Structural\" />
   </ItemGroup>
 
 </Project>
