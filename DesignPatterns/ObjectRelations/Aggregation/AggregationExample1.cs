@@ -2,7 +2,7 @@
 
 internal class AggregationExample1 : Separator
 {
-    public void Run()
+    public new void Run()
     {
         Console.WriteLine("This is Aggregation Example");
         var car = new Car("Toyota", "Corolla"); // Container object

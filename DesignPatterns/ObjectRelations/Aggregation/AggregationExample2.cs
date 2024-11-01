@@ -2,7 +2,7 @@
 
 internal class AggregationExample2 : Separator
 {
-    public void Run()
+    public new void Run()
     {
         var book1 = new Book("The Alchemist", "Paulo Coelho"); // Component object
         var book2 = new Book("The Da Vinci Code", "Dan Brown"); // Component object

@@ -2,7 +2,7 @@ namespace DesignPatterns.ObjectRelations.Aggregation;
 
 internal class AssociationExample1 : Separator
 {
-    public void Run()
+    public new void Run()
     {
         Console.WriteLine("This is Bi-directional Association Example");
         var teacher = new Teacher("John Doe");
@@ -10,6 +10,7 @@ internal class AssociationExample1 : Separator
         var student2 = new Student("Bob", teacher);
         var student3 = new Student("Charlie", teacher);
 
+        Console.WriteLine("Students of Teacher: " + teacher.Name);
         teacher.Students.ForEach(student => Console.WriteLine($"Student: {student.Name}"));
         // Student: Alice
         // Student: Bob

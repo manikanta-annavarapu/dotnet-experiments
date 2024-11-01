@@ -7,7 +7,7 @@ establishes through their objects. It is a more general relationship that descri
 and how they are using each other. This relationship is characterized by the "has-a" principle, indicating that one object 
 (an instance of a class) contains or makes use of another object. Associations can be of different types, such as one-to-one, 
 one-to-many, many-to-one, and many-to-many, depending on how many instances of each class are involved.
-
+In general, you use an association to represent something like a field in a class.
 
 ## Difference between Association and Aggregation
 
