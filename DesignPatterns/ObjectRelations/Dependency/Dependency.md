@@ -27,6 +27,7 @@ classDiagram
 Service ..> Logger : depends on
 PaymentProcessor ..> PaymentGateway : depends on
 
+note for Service "~Dependent class~"
 note for Service "Example of Dependency in class constructor"
 class Service {
     -Logger _logger
@@ -34,14 +35,17 @@ class Service {
     +void PerformOperation()
 }
 
+note for Logger "~Dependency class~"
 class Logger{
     +void Log(string)
 }
 
+note for PaymentGateway "~Dependency class~"
 class PaymentGateway {
     +void ProcessPayment(decimal amount)
 }
 
+note for PaymentProcessor "~Dependent class~"
 note for PaymentProcessor "Example of Dependency in a method parameter"
 class PaymentProcessor {
     +void ProcessPayment(PaymentGateway gateway, decimal amount)
