@@ -1,6 +1,7 @@
 ﻿# Aggregation
 
 ## Definition
+
 Aggregation is a special form of association where one class contains a reference to another class
 but the lifecycle of the contained objects does not depend on the containing object. Aggregation represents a "has-a" relationship.
 
@@ -16,7 +17,7 @@ The Book and the Library have a  “has-a” relationship.
 In this example, the Library is the Aggregate class, which contains references to many Book objects considered parts of the Library.
 The Library is responsible for managing the collection of books, but the existence of a book does not depend on the Library.
 
-**Aggregation is a less strict variant of composition, where one object merely contains a reference to another. 
+**Aggregation is a less strict variant of composition, where one object merely contains a reference to another.
 The container doesn't control the life cycle of the component. The component can exist without the container and
 can be linked to several container at the same time.**
 

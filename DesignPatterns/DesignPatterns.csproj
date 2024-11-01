@@ -8,7 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="ObjectRelations\Dependency\" />
     <Folder Include="Patterns\Creational\" />
     <Folder Include="Patterns\Structural\" />
   </ItemGroup>
