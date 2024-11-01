@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RunSettings>
+    <DataCollectionRunSettings>
+        <DataCollectors>
+            <DataCollector friendlyName="xplat code coverage">
+                <Configuration>
+                    <Format>cobertura</Format>
+                    <Include>[dotnet8ccFluentValidation]*</Include>
+                    <IncludeTestAssembly>true</IncludeTestAssembly>
+                </Configuration>
+            </DataCollector>
+        </DataCollectors>
+    </DataCollectionRunSettings>
+</RunSettings>
