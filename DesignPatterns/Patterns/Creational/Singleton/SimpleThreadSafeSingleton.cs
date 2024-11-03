@@ -1,6 +1,6 @@
 ﻿namespace DesignPatterns.Patterns.Creational.Singleton;
 
-internal class SimpleThreadSafeSingleton
+internal sealed class SimpleThreadSafeSingleton
 {
     private static SimpleThreadSafeSingleton? _instance = null;
     private static readonly object _lock = new object();

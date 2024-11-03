@@ -25,7 +25,7 @@ Here in all versions of Singleton, the constructor is private to prevent the cre
 <summary>Not Thread Safe Singleton</summary>
  
 Refer [NotThreadSafeSingleton.cs](NotThreadSafeSingleton.cs)
-Here, the instance is created when the class is loaded.
+Here, the instance is created when the `Instance` is requested.
 
  | pros | cons |
  | ---- | ---- |
@@ -42,7 +42,7 @@ This will result in two instances of the Singleton class.
 <summary>Simple Thread Safe Singleton</summary>
  
 Refer [SimpleThreadSafeSingleton.cs](SimpleThreadSafeSingleton.cs)
-Here, the instance is created when the class is loaded.
+Here, the instance is created when the `Instance` is requested.
 
  | pros | cons |
  | ---- | ---- |
@@ -56,6 +56,32 @@ Here, the instance is created when the class is loaded.
  The lock mechanism ensures that only one thread can access the `Instance` get method at a time.
  This means that if multiple threads are trying to access the `Instance` get method, they will have to wait for the lock to be released.
  This can cause performance overhead.
+
+ </details>
+
+ <details>
+ <summary>Double Check Locking Thread Safe Singleton</summary>
+
+ Refer [DoubleCheckLockingSingleton.cs](DoubleCheckLockingSingleton.cs)
+ Here, the instance is created when the `Instance` is requested.
+
+ | pros | cons |
+ | ---- | ---- |
+ | Performance overhead is reduced | Complex to implement |
+
+ **How come performance overhead is reduced?**
+ In the Double Check Locking Thread Safe Singleton, the lock mechanism is only executed when the instance is null.
+ This means that the lock mechanism is executed only once when the instance is created.
+ This reduces the performance overhead.
+ Whenever a thread requests the instance, it first checks if the instance is null.
+ If the instance is null, then the thread acquires the lock and creates the instance.
+ If the instance is not null, then the thread directly returns the instance.
+
+ **Why it is complex to implement?**
+ The Double Check Locking Thread Safe Singleton is complex to implement because it requires two checks for the instance.
+ The first check is to check if the instance is null.
+ The second check is to check if the instance is null again after acquiring the lock.
+ This is done to ensure that only one instance is created.
 
  </details>
 

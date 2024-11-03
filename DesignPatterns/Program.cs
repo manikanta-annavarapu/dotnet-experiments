@@ -1,4 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using DesignPatterns.ObjectRelations;
 using DesignPatterns.ObjectRelations.Aggregation;
 using DesignPatterns.ObjectRelations.Composition;
 using DesignPatterns.ObjectRelations.Dependency;
@@ -43,6 +44,8 @@ else
     Console.WriteLine("NotThreadSafeSingleton is not a Singleton.");
 }
 
+new Separator().Run();
+
 SimpleThreadSafeSingleton simpleThreadSafeSingleton1 = SimpleThreadSafeSingleton.Instance;
 SimpleThreadSafeSingleton simpleThreadSafeSingleton2 = SimpleThreadSafeSingleton.Instance;
 
@@ -53,5 +56,19 @@ if (notThreadSafeSingleton1 == notThreadSafeSingleton2)
 else
 {
     Console.WriteLine("SimpleThreadSafeSingleton is not a Singleton.");
+}
+
+new Separator().Run();
+
+DoubleCheckLockingSingleton doubleCheckLockingSingleton1 = DoubleCheckLockingSingleton.Instance;
+DoubleCheckLockingSingleton doubleCheckLockingSingleton2 = DoubleCheckLockingSingleton.Instance;
+
+if (notThreadSafeSingleton1 == notThreadSafeSingleton2)
+{
+    Console.WriteLine("DoubleCheckLockingSingleton is a Singleton.");
+}
+else
+{
+    Console.WriteLine("DoubleCheckLockingSingleton is not a Singleton.");
 }
 
