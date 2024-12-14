@@ -28,9 +28,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "InterviewQuestions", "Inter
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatterns", "DesignPatterns\DesignPatterns.csproj", "{FDD9D1E8-AF81-47F1-9333-9FE302CB121A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnet6ccFluentValidation", "dotnet6ccFluentValidation\dotnet6ccFluentValidation.csproj", "{7C1C2A2F-BC89-4EF2-8905-78A86A527639}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnet6ccFluentValidation", "dotnet6ccFluentValidation\dotnet6ccFluentValidation.csproj", "{7C1C2A2F-BC89-4EF2-8905-78A86A527639}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnet8ccFluentValidation", "dotnet8ccFluentValidation\dotnet8ccFluentValidation.csproj", "{ADBB75A5-C2B8-438A-B9E0-7A5C20A6F0BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnet8ccFluentValidation", "dotnet8ccFluentValidation\dotnet8ccFluentValidation.csproj", "{ADBB75A5-C2B8-438A-B9E0-7A5C20A6F0BB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AMK.Exp.CsharpLang", "AMK.Exp.CsharpLang\AMK.Exp.CsharpLang.csproj", "{B898736A-2608-4C8C-AFA3-4080E0B75D1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticNonStaticProps", "StaticNonStaticProps\StaticNonStaticProps.csproj", "{0A1ECC7E-3884-47F9-910A-5DA4583179B8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -86,6 +90,14 @@ Global
 		{ADBB75A5-C2B8-438A-B9E0-7A5C20A6F0BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ADBB75A5-C2B8-438A-B9E0-7A5C20A6F0BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ADBB75A5-C2B8-438A-B9E0-7A5C20A6F0BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B898736A-2608-4C8C-AFA3-4080E0B75D1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B898736A-2608-4C8C-AFA3-4080E0B75D1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B898736A-2608-4C8C-AFA3-4080E0B75D1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B898736A-2608-4C8C-AFA3-4080E0B75D1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A1ECC7E-3884-47F9-910A-5DA4583179B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A1ECC7E-3884-47F9-910A-5DA4583179B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A1ECC7E-3884-47F9-910A-5DA4583179B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A1ECC7E-3884-47F9-910A-5DA4583179B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -72,3 +72,17 @@ else
     Console.WriteLine("DoubleCheckLockingSingleton is not a Singleton.");
 }
 
+new Separator().Run();
+
+Console.WriteLine(StaticSingleton.Counter); //observe the console output, when this line executes. It proofs this is not a lazy initialization.
+StaticSingleton staticSingleton1 = StaticSingleton.Instance;
+StaticSingleton staticSingleton2 = StaticSingleton.Instance;
+
+if (staticSingleton1 == staticSingleton2)
+{
+    Console.WriteLine("StaticSingleton is a Singleton.");
+}
+else
+{
+    Console.WriteLine("StaticSingleton is not a Singleton.");
+}
