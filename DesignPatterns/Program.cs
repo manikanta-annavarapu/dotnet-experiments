@@ -4,6 +4,7 @@ using DesignPatterns.ObjectRelations.Aggregation;
 using DesignPatterns.ObjectRelations.Composition;
 using DesignPatterns.ObjectRelations.Dependency;
 using DesignPatterns.Patterns.Behavioral.ChainOfResponsibility.v1;
+using DesignPatterns.Patterns.Creational.FactoryPattern;
 using DesignPatterns.Patterns.Creational.Singleton;
 
 // Object Relations
@@ -74,15 +75,22 @@ else
 
 new Separator().Run();
 
-Console.WriteLine(StaticSingleton.Counter); //observe the console output, when this line executes. It proofs this is not a lazy initialization.
-StaticSingleton staticSingleton1 = StaticSingleton.Instance;
-StaticSingleton staticSingleton2 = StaticSingleton.Instance;
+//Console.WriteLine(StaticSingleton.Counter); //observe the console output, when this line executes. It proofs this is not a lazy initialization.
+//StaticSingleton staticSingleton1 = StaticSingleton.Instance;
+//StaticSingleton staticSingleton2 = StaticSingleton.Instance;
 
-if (staticSingleton1 == staticSingleton2)
-{
-    Console.WriteLine("StaticSingleton is a Singleton.");
-}
-else
-{
-    Console.WriteLine("StaticSingleton is not a Singleton.");
-}
+//if (staticSingleton1 == staticSingleton2)
+//{
+//    Console.WriteLine("StaticSingleton is a Singleton.");
+//}
+//else
+//{
+//    Console.WriteLine("StaticSingleton is not a Singleton.");
+//}
+
+new Separator().Run();
+
+// Factory Pattern Example
+
+var factoryPattern = new FactoryPattern();
+factoryPattern.Run();

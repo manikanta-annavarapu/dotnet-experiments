@@ -23,7 +23,7 @@ Here in all versions of Singleton, the constructor is private to prevent the cre
 
 <details>
 <summary>Not Thread Safe Singleton</summary>
- 
+
 Refer [NotThreadSafeSingleton.cs](NotThreadSafeSingleton.cs)
 Here, the instance is created when the `Instance` is requested.
 
@@ -40,7 +40,7 @@ This will result in two instances of the Singleton class.
 
 <details>
 <summary>Simple Thread Safe Singleton</summary>
- 
+
 Refer [SimpleThreadSafeSingleton.cs](SimpleThreadSafeSingleton.cs)
 Here, the instance is created when the `Instance` is requested.
 
@@ -113,3 +113,8 @@ public class Logger
     }
 }
 ```
+
+
+## References
+
+- [CSharp in depth Singleton](https://csharpindepth.com/Articles/Singleton)
