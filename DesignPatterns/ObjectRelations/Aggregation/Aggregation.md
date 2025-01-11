@@ -12,7 +12,7 @@ If one class object is deleted, it does not affect the other class object.
 Let us clearly understand this with an example. Consider a Library named PhysicsWallah and a Book.
 There are many books in the library, and each one is the property of the library.
 It does not necessarily mean the library is destroyed if a book is returned or removed.
-The Book and the Library have a  “has-a” relationship.
+The Book and the Library have a “has-a” relationship.
 
 In this example, the Library is the Aggregate class, which contains references to many Book objects considered parts of the Library.
 The Library is responsible for managing the collection of books, but the existence of a book does not depend on the Library.

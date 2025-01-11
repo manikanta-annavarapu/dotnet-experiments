@@ -20,6 +20,11 @@ Handler <|.. BaseHandler : Realization
 BaseHandler o--> Handler : Aggregation
 BaseHandler <|-- ConcreteHandler1 : Inheritance
 BaseHandler <|-- ConcreteHandler2 : Inheritance
+Client --> Handler
+
+class Client{
+    +run() // sets all the handlers in a chain and passes the request to first handler.
+}
 
 class Handler{
     <<interface>>
@@ -46,6 +51,6 @@ class ConcreteHandler2{
 
 ### References
 
-* [Refactoring guru CoR](https://refactoring.guru/design-patterns/chain-of-responsibility)
+- [Refactoring guru CoR](https://refactoring.guru/design-patterns/chain-of-responsibility)
 
 [Back to Top](#Chain-of-Responsibility)
