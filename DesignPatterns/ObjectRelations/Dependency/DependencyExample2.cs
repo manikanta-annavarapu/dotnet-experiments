@@ -19,6 +19,10 @@ public class PaymentGateway
 {
     public void ProcessPayment(decimal amount)
     {
+        // `:C` is a currency formatter based on the culture setting 
+        // CultureInfo currentCulture = CultureInfo.CurrentCulture;
+        // Console.WriteLine($"Current Culture: {currentCulture.Name}");
+        // Console.WriteLine($"Currency Symbol: {currentCulture.NumberFormat.CurrencySymbol}");
         Console.WriteLine($"Processing payment of {amount:C}");
     }
 }
